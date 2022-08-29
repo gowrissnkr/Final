@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./orderPage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <!-- Logo -- -->
+            <div class="logo">
+                <a href="./index.html">
+                    <h4><span>SHOP</span>LANE</h4>
+                </a>
+            </div>
+
+            <!-- Menu Items -->
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#clothing">Clothings</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+            </ul>
+            <!-- Icons -->
+            <div class="icons">
+                <i class="fa fa-search"></i>
+                <div class="cart" id="cartIcon">
+                    <a href="./checkout.html">
+                        <i class="fa fa-shopping-cart">
+                            <span id="cart-count"></span>
+                        </i>
+                    </a>
+                </div>
+                <i class="fa fa-user-circle-o"></i>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="cart">
+        <h1>Checkout</h1>
+        <div class="cart-container">
+            <div class="left-side">
+                <p>Total Items: <span id="number-of-item"></span>
+                </p>
+                <div class="cart-items" id="cart-item-container">
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="total-amount">
+                    <h2>Total Amount</h2>
+                    <p>Total Amount: Rs <span id="total-amount"></span></p>
+                    <a href="./order.html"><button id="place-order" onClick="cartEmpty()">Place Order</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="./checkout.js"></script>
+    <script src="./cartCount.js"></script>
+</body>
+
+</html>

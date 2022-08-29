@@ -1,0 +1,28 @@
+.order-confirm {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.order-confirm img {
+    height: 300px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
